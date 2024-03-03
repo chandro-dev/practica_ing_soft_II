@@ -9,14 +9,48 @@
   </head>
   <body>
     <div class="_pdf">
-        <h3>
-            Practica de pruebas unitarias usando caja blanca y caja negra.
-        </h3>
+      <h1 class="title">
+        Practica de pruebas unitarias usando caja blanca y caja negra.
+      </h1>
       <embed src="./CASO PRUEBAS UNITARIAS 2023.pdf" />
     </div>
 
     <div class="contenedor">
-        
+      <div class="sesion">
+        <h2>Ingreso👀</h2>
+        Usuario:
+        <input id="in_usuario" />
+        Contraseña:
+        <input type="password" id="in_contrasena" />
+
+        <p id="p-sesion"></p>
+        <button>Ingresar</button>
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <div class="matricular">
+        <h2>Matricular😶</h2>
+        Ingresar el carnet estudiantil
+        <input id="in_carnet" type="number" />
+        Ingresar las materias
+
+        <select id="in_materias">
+          <option>Ecuaciones diferenciales (500.000)</option>
+          <option>Concreto (400.000)</option>
+          <option>Historia (1.000.000)</option>
+          <option selected="selected"></option>
+        </select>
+
+        Metodo de pago💱:
+        <select id="in_pago">
+          <option>Tarjeta</option>
+          <option>Cheque</option>
+          <option>Efecivo</option>
+          <option selected="selected"></option>
+        </select>
+        <button>Generar recibo de pago</button>
+      </div>
     </div>
   </body>
 </html>
