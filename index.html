@@ -64,6 +64,7 @@
     <h2>Codigo de caja blanca:</h2>
   </div class="ejemplo">
     <code>
+      <h3>Campo Carnet</h3>
       in_carnet.addEventListener('keyup', (e) => {
       
          <strong> if (parseInt(in_carnet.value) >= 10000)</strong> {
@@ -79,6 +80,22 @@
               validez('carnet', false);
           }
       });
+      <h3>Campo Usuario</h3>
+      in_usuario.addEventListener('keyup', (e) => {
+
+        if (in_usuario.value.length >= 5) {
+            if (in_usuario.value.length <= 15) {
+                validez('usuario', true);
+                in_contrasena.disabled = false;
+            } else {
+                in_contrasena.disabled = true;
+                validez('usuario', false);
+            }
+        } else {
+            in_contrasena.disabled = true;
+            validez('usuario', false);
+        }
+    });
       </code>
     </div>      
   </body>
