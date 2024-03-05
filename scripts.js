@@ -83,10 +83,10 @@ function validez(span, valido) {
     var _span = document.querySelector('#spa_' + span);
     console.log(_span);
     if (valido) {
-        _span.textContent = "Soy valido";
+        _span.textContent = "input valido";
         _span.className = "correcto"
     } else {
-        _span.textContent = "Soy incorrecto";
+        _span.textContent = "input invalido";
         _span.className = "incorrecto"
     }
 
