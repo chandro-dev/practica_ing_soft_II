@@ -65,3 +65,15 @@ in_pago.addEventListener('change', (e) => {
         console.log("Valido");
     }
 });
+
+
+function validez( span,valido){
+
+    var span = document.querySelector('#span_'+sapn);
+    if (valido){
+
+    }else{
+
+    }
+
+}
