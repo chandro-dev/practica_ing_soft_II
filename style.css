@@ -41,3 +41,17 @@ body {
 .incorrecto {
   color: red;
 }
+code {
+  position: relative;
+  display: block;
+  white-space: pre-wrap;
+  background-color: #f4f4f4;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.ejemplo{
+  padding: 2em;
+  position: absolute;
+  background-color: white;
+}

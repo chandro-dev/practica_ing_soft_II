@@ -59,5 +59,27 @@
         <button>Generar recibo de pago</button>
       </div>
     </div>
+<div>
+  <div>
+    <h2>Codigo de caja blanca:</h2>
+  </div class="ejemplo">
+    <code>
+      in_carnet.addEventListener('keyup', (e) => {
+      
+         <strong> if (parseInt(in_carnet.value) >= 10000)</strong> {
+              <strong>if (parseInt(in_carnet.value) <= 9999999999)</strong> {
+                  in_materias.disabled = false;
+                  validez('carnet', true);
+             <strong> } else {</strong>
+                  in_materias.disabled = true;
+                  validez('carnet', false);
+              }
+              <strong>} else {</strong>
+              in_materias.disabled = true;
+              validez('carnet', false);
+          }
+      });
+      </code>
+    </div>      
   </body>
 </html>
